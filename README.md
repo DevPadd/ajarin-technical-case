@@ -2,6 +2,10 @@
 
 ## Overview
 
+<div align="center">
+  <img src="assets/images/1.png" alt="Dashboard" width="700"/>
+</div>
+
 ### Fitur yang dibuat:
 
 Pet companion yang bisa tumbuh dan dikustomisasi, terinspirasi dari crackd.it dan wayground.com
@@ -9,6 +13,10 @@ Pet companion yang bisa tumbuh dan dikustomisasi, terinspirasi dari crackd.it da
 - Pet virtual 6 stage dengan animasi dan aura
 - Sistem tugas dengan XP (daily-login, send-chat, join-series)
 - Kustomisasi pet (rename pet dengan double click pada nama pet, memilih 7 warna + 3 aksesoris seperti topi, mahkota, dan beanie)
+
+<div align="center">
+  <img src="assets/images/2.png" alt="Pet Card & Customization" width="700"/>
+</div>
 
 ### Masalah yang ingin diselesaikan:
 
@@ -19,6 +27,12 @@ Retensi dan interaktivitas siswa yang kurang, terutama di platform belajar onlin
 - Elemen gamifikasi (pet evolusi, XP) memberikan rasa pencapaian dan progres visual
 - Tugas harian mendorong kebiasaan belajar konsisten
 - Kustomisasi pet menciptakan ikatan personal dengan pengguna
+
+<div align="center">
+  <img src="assets/images/3.png" alt="Series Page" width="700"/>
+  <br/><br/>
+  <img src="assets/images/4.png" alt="Chat Room" width="700"/>
+</div>
 
 ## Technical Details
 
@@ -38,17 +52,12 @@ Retensi dan interaktivitas siswa yang kurang, terutama di platform belajar onlin
 ### Running Locally:
 
 1. Clone repositori:
-   `git clone <url-repo>`
-   `cd ajarin-submission-2`
+   `git clone https://github.com/DevPadd/ajarin-technical-case.git` lalu `cd ajarin-technical-case`
 2. Install dependencies:
    `npm install`
 3. Jalankan development server:
    `npm run dev`
 4. Buka `http://localhost:3000` di browser.
-5. (Opsional) Build untuk production:
-   `npm run build`
-   `npm start`
-   Catatan: Semua data disimpan di localStorage browser. Tidak ada database atau backend yang diperlukan. Data akan hilang jika localStorage dibersihkan.
 
 ## Development Process
 
@@ -56,7 +65,7 @@ Retensi dan interaktivitas siswa yang kurang, terutama di platform belajar onlin
 
 ### AI/Agent yang digunakan
 
-agent Opencode dengan model Deepseek V4 Flash Free dan Minimax-m3
+Opencode dengan agent build dan plan, dengan model Deepseek V4 Flash Free dan Minimax-m3:cloud
 
 ### Workflow yang digunakan:
 
@@ -99,7 +108,7 @@ Membangun Ajarin, platform belajar frontend-only berbasis Next.js dengan gamifik
 
 ### Fitur yang Diimplementasikan
 
-- Pet virtual — SVG inline, 6 stage (Telur → Legenda), animasi bernapas/berkedip, aura per stage
+- Pet virtual — SVG inline, 6 stage (1 → 6), animasi bernapas/berkedip, aura per stage
 - Sistem tugas — 3 jenis: daily-login (10 XP), send-chat (15 XP), join-series (30 XP), dedup per hari via isTaskDoneToday
 - Kustomisasi pet — 7 warna + 3 aksesoris (Cap, Crown, Beanie) dengan preview SVG di modal
 - Chat room — localStorage, XP per pesan, rendering aman via textContent (anti-XSS)

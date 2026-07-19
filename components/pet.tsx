@@ -8,9 +8,9 @@ const AURA_CONFIG: Record<
   { color: string; opacity: number; pulse: boolean }
 > = {
   1: { color: "transparent", opacity: 0, pulse: false },
-  2: { color: "#fed7aa", opacity: 0.25, pulse: false },
-  3: { color: "#fdba74", opacity: 0.35, pulse: true },
-  4: { color: "#fb923c", opacity: 0.55, pulse: true },
+  2: { color: "#fed7aa", opacity: 0.45, pulse: true },
+  3: { color: "#fdba74", opacity: 0.55, pulse: true },
+  4: { color: "#fb923c", opacity: 0.65, pulse: true },
   5: { color: "#f97316", opacity: 0.75, pulse: true },
   6: { color: "#ea580c", opacity: 0.9, pulse: true },
 };
@@ -76,9 +76,10 @@ export default function Pet({
   const [isBlinking, setIsBlinking] = useState(false);
   const clampedStage = Math.min(6, Math.max(1, stage));
   const aura = AURA_CONFIG[clampedStage];
-  const AccessoryComponent = accessory && accessory !== "none"
-    ? ACCESSORY_MAP[accessory as keyof typeof ACCESSORY_MAP]
-    : null;
+  const AccessoryComponent =
+    accessory && accessory !== "none"
+      ? ACCESSORY_MAP[accessory as keyof typeof ACCESSORY_MAP]
+      : null;
 
   useEffect(() => {
     let timeoutId: ReturnType<typeof setTimeout>;

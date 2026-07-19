@@ -8,12 +8,12 @@ import Pet from "@/components/pet";
 import CustomizeModal from "@/components/customize-modal";
 
 const STAGE_LABELS: Record<number, string> = {
-  1: "Stage 1 — Telur",
-  2: "Stage 2 — Bayi",
-  3: "Stage 3 — Remaja",
-  4: "Stage 4 — Dewasa",
-  5: "Stage 5 — Ultimate",
-  6: "Stage 6 — Legenda",
+  1: "Stage 1",
+  2: "Stage 2",
+  3: "Stage 3",
+  4: "Stage 4",
+  5: "Stage 5",
+  6: "Stage 6",
 };
 
 export default function PetCard() {
@@ -28,7 +28,8 @@ export default function PetCard() {
   const exp = getExpForNextStage(state.petExp);
   const isMaxStage = stage >= 5;
 
-  const colorConfig = PET_COLORS.find((c) => c.primary === state.petColor) || PET_COLORS[0];
+  const colorConfig =
+    PET_COLORS.find((c) => c.primary === state.petColor) || PET_COLORS[0];
 
   function startEditing() {
     setNameDraft(state.petName);
