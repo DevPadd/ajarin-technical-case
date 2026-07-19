@@ -3,7 +3,7 @@
 ## Overview
 
 <div align="center">
-  <img src="assets/images/1.png" alt="Dashboard" width="700"/>
+  <img src="assets/images/1.png" alt="Dashboard" height="300" align="center"/>
 </div>
 
 ### Fitur yang dibuat:
