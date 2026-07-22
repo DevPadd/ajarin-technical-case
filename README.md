@@ -76,7 +76,7 @@ Vibe coding: user membuat component statis, lalu menginstruksikan AI untuk mener
 - Menulis logic and interaktibilitas komponen React (pet, sidebar, modal)
 - Membantu debugging (stale closure, XSS, scroll leak, stage inconsistency)
 - Refactoring kode (rename provider, hapus streak system, flatten route structure)
-- Audit keamanan dan produksi — menemukan 47 isu, memperbaiki semuanya
+- Audit keamanan dan produksi dan menemukan dan memperbaiki 47 isu
 - Dokumentasi arsitektur ke EXPLANATION.md
 
 ### Tantangan terbesar:
